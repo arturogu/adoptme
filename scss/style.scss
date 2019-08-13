@@ -1,0 +1,29 @@
+@import '_variables';
+
+nav {
+  font-family: $font-family-primary;
+  background-color: $color-red;
+  align-items: center;
+  color: white;
+   img{
+     padding: 5%;
+     width: 75px;
+   }
+
+  .title{
+    font-size: 200%;
+    font-weight: lighter;
+  }
+
+  .menu{
+    font-weight: bold;
+    font-size: 90%;
+  }
+}
+
+.banner {
+  background-image: url("../img/dogs.jpg");
+  background-position: center;
+  background-size: 100% auto;
+  height: 65 * 7px;
+}

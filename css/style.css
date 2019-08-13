@@ -1,3 +1,20 @@
+nav {
+  font-family: "Open Sans", sans-serif;
+  background-color: #EF3E42;
+  align-items: center;
+  color: white; }
+  nav img {
+    padding: 5%;
+    width: 75px; }
+  nav .title {
+    font-size: 200%;
+    font-weight: lighter; }
+  nav .menu {
+    font-weight: bold;
+    font-size: 90%; }
 
-
-/*# sourceMappingURL=style.css.map */
+.banner {
+  background-image: url("../img/dogs.jpg");
+  background-position: center;
+  background-size: 100% auto;
+  height: 455px; }
