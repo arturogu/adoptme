@@ -120,7 +120,7 @@ footer {
   border-top: 2px #EF3E42;
   color: white; }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
   .menu {
     margin-bottom: 15px; }
   .volunteers {
