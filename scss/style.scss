@@ -119,6 +119,41 @@ nav {
   }
 }
 
+.programs{
+  @extend %h2;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: $color-gray;
+
+  .active {
+    padding: 0;
+    color: $color-blue;
+    border-bottom: 5px solid $color-blue;
+  }
+
+  .program-info {
+    color:  $color-red;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .program-txt {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+
+    img {
+      width: 20%;
+    }
+  }
+}
+
+.dog {
+  img {
+    width: 100%;
+  }
+
+}
+
 footer {
   padding: 5% 0 5% 0;
   background-color: $color-blue;

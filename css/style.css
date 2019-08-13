@@ -3,7 +3,7 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 300; }
 
-.volunteers .volunteers-title, .testimonial .testimonial-title, .testimonial .testimonial-video {
+.volunteers .volunteers-title, .testimonial .testimonial-title, .testimonial .testimonial-video, .programs {
   font-size: 20px;
   font-family: "Open Sans Condensed", sans-serif;
   font-weight: bold; }
@@ -81,6 +81,27 @@ nav {
   top: 5%; }
 
 .testimonial img {
+  width: 100%; }
+
+.programs {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: #777; }
+  .programs .active {
+    padding: 0;
+    color: #332982;
+    border-bottom: 5px solid #332982; }
+  .programs .program-info {
+    color: #EF3E42;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    .programs .program-info .program-txt {
+      font-size: 1rem;
+      font-weight: 300; }
+    .programs .program-info img {
+      width: 20%; }
+
+.dog img {
   width: 100%; }
 
 footer {
