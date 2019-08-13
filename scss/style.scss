@@ -18,8 +18,12 @@
   padding: 15px;
 }
 
+body {
+  max-width: 100%;
+}
+
 nav {
-  font-family: $font-family-secondary;
+  font-family: $font-family-primary;
   background-color: $color-red;
   align-items: center;
   color: white;
@@ -31,7 +35,7 @@ nav {
 
   img {
     width: 75px;
-    padding: 5%;
+    padding: 4%;
   }
 }
 
@@ -44,6 +48,7 @@ nav {
   background-image: url("../img/dogs.jpg");
   background-position: center;
   background-size: 100% auto;
+  background-repeat: no-repeat;
   height: 65 * 7px;
   position: relative;
 
@@ -60,6 +65,10 @@ nav {
       font-size: 40px;
     }
   }
+
+  @media (max-width: 750px) {
+    background-size: auto 100%;
+  }
 }
 
 .button {
@@ -74,7 +83,7 @@ nav {
 }
 
 .volunteers {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 9px 7px rgba(0,0,0,0.2);
   padding: 0;
 
   .volunteers-title {
@@ -91,6 +100,7 @@ nav {
     margin-left: 15px;
     border-color: $color-blue;
     color: $color-blue;
+    margin-bottom: 15px;
   }
 
   img {
@@ -135,8 +145,10 @@ nav {
     color:  $color-red;
     margin-top: 20px;
     margin-bottom: 20px;
+    width: 100%;
 
     .program-txt {
+      color: $color-gray;
       font-size: 1rem;
       font-weight: 300;
     }
@@ -159,4 +171,32 @@ footer {
   background-color: $color-blue;
   border-top: 2px $color-red;
   color: white;
+}
+
+@media screen and (max-width: 576px) {
+  .menu {
+    margin-bottom: 15px;
+  }
+
+  .volunteers {
+    margin: 5%;
+  }
+
+  .programs {
+    .program-menu {
+      margin-left: 3%;
+    }
+    .program-info {
+      margin: 5% 3%;
+
+      img {
+        width: 35%;
+      }
+    }
+  }
+
+  .dog {
+    margin-top: 5%;
+  }
+
 }
