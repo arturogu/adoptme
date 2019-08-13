@@ -1,24 +1,43 @@
 @import '_variables';
 
+%h1 {
+  font-size: $font-size-h1;
+  font-family: $font-family-h1;
+  font-weight: $font-weight-h1
+}
+
+%h2 {
+  font-size: $font-size-h2;
+  font-family: $font-family-h2;
+  font-weight: $font-weight-h2;
+}
+
+%header {
+  @extend %h2;
+  color: white;
+  padding: 15px;
+}
+
 nav {
-  font-family: $font-family-primary;
+  font-family: $font-family-secondary;
   background-color: $color-red;
   align-items: center;
   color: white;
-   img{
-     padding: 5%;
-     width: 75px;
-   }
+}
 
-  .title{
-    font-size: 200%;
-    font-weight: lighter;
-  }
+.logo {
+  font-size: 200%;
+  font-weight: lighter;
 
-  .menu{
-    font-weight: bold;
-    font-size: 90%;
+  img {
+    width: 75px;
+    padding: 5%;
   }
+}
+
+.menu{
+  font-weight: bold;
+  font-size: 90%;
 }
 
 .banner {
@@ -26,4 +45,83 @@ nav {
   background-position: center;
   background-size: 100% auto;
   height: 65 * 7px;
+  position: relative;
+
+  .banner-shadow {
+    height: 25%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: $color-red;
+    background-color: #00000050;
+
+    .banner-title{
+      @extend %h1;
+      font-size: 40px;
+    }
+  }
+}
+
+.button {
+  color:  inherit;
+  background-color: transparent;
+  border: 2px solid $color-red;
+}
+
+.content {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.volunteers {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 0;
+
+  .volunteers-title {
+    @extend %header;
+    background-color: $color-blue;
+  }
+
+  .volunteers-txt {
+    color: $color-gray;
+    padding: 15px;
+  }
+
+  .button {
+    margin-left: 15px;
+    border-color: $color-blue;
+    color: $color-blue;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.testimonial {
+  .testimonial-title {
+    @extend %header;
+    background-color: $color-red;
+  }
+
+  .testimonial-container {
+    position: relative;
+  }
+
+  .testimonial-video {
+    @extend %header;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+footer {
+  padding: 5% 0 5% 0;
+  background-color: $color-blue;
+  border-top: 2px $color-red;
+  color: white;
 }
